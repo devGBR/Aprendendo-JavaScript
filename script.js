@@ -1,7 +1,13 @@
 function mostrardata(){
-    document.getElementById("data").innerHTML=Date()
+    var data= document.getElementById("data").innerHTML=Date()
+    alert(data)
+}
+function mostrarmensagem(){
+    var nome="Aprendi declarar variavel"
+    alert(nome)
 }
 
-function mostrarmensagem(){
-    alert('TO COM FOME')
-}
+ {var nome1 = "Israel";
+ var sobrenome1 = "Oliveira ";
+    document.write("Bem vindo ao Sistema ",[sobrenome1],[nome1])
+ }
