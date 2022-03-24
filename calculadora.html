@@ -7,12 +7,19 @@
     <body>
         <script>
             var num1 = prompt("Digite o primeiro valor")
+            num1 = parseFloat(num1)
+               
             var num2 = prompt("Digite o segundo valor")
-                document.write("Resultado = ", parseInt(num1)+parseInt(num2))
-                document.write("<BR>Resultado = ", parseInt(num1)*parseInt(num2))
-                document.write("<br>Resultado = ", parseInt(num1)/parseInt(num2))
-                document.write("<br>Resultado = ", parseInt(num1)-parseInt(num2))
-                document.write("<br>Resultado = ", parseFloat(num1)+parseFloat(num2) )
+            num2 = parseFloat(num2)
+            var ad = num1+num2
+            var sub = num1-num2
+            var mult = num1*num2
+            var div = num1/num2
+
+                document.write("<BR>Resultado = ", ad)
+                document.write("<br>Resultado = ", sub)
+                document.write("<br>Resultado = ", mult)
+                document.write("<br>Resultado = ", div)
         </script>
     </body>
 </html>
