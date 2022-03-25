@@ -3,16 +3,67 @@
     <head>
         <meta charset="utf-8">
         <title>IF e ELSE</title>
-        <input id="textinput" name="textinput" value="" type="text">
-        <button onclick="enviar()">Confirmar</button>
+        <!-- <input id="textinput" name="textinput" value="" type="text">
+        <button onclick="enviar()">Confirmar</button> -->
         <script>
-            function enviar(){
-                var valor = document.getElementById("textinput").value;
-                alert("Você digitou: " + valor);
-            }
+            // function enviar(){
+            //     var valor = document.getElementById("textinput").value;
+            //     alert("Você digitou: " + valor);
+            // }
+            //             == (igualdade)
+            // !=  (desiguldade)
+            // >   (maior que)
+            // >= (maior ou igual)
+            // <   (menor)
+            // <= (menor ou igual)
         </script>
     </head>
     <body>
-        
+        <!-- <form>
+            <input id="text" name="text" value="" type="text">  <input id="text1" name="tex1" value="" type="text">
+             <button onclick="result()">Comparar</button>
+        </form> -->
+      <!-- <script>
+           function result(){
+               alert(document.getElementById("text").value <= document.getElementById("text1").value) 
+           } -->
+           <input id="igual1" type="text" /> == <input id="igual2" type="text" />
+            <button onclick="igual()">Comparar</button> <br />
+
+            <input id="diferente1" type="text" /> !=&nbsp;&nbsp;<input id="diferente2" type="text" value="" />
+            <button onclick="diferente()">Comparar</button> <br />
+
+            <input id="maior1" type="text" />&nbsp; &gt;&nbsp;&nbsp;<input id="maior2" type="text" />
+             <button onclick="maior()">Comparar</button> <br />
+
+            <input id="maiorigual1" type="text" /> &gt;= <input id="maiorigual2" type="text" />
+               <button onclick="maiorigual()">Comparar</button> <br />
+
+            <input id="menor1" type="text" />&nbsp; &lt;&nbsp;&nbsp;<input id="menor2" type="text" />
+               <button onclick="menor()">Comparar</button> <br />
+
+            <input id="menorigual1" type="text" /> &lt;= <input id="menorigual2" type="text" />
+                <button onclick="menorigual()">Comparar</button> <br />
+                
+        <script type="text/javascript">
+             function igual(){
+               alert(document.getElementById("igual1").value == document.getElementById("igual2").value);
+             }
+             function diferente(){
+                  alert(document.getElementById("diferente1").value != document.getElementById("diferente2").value);
+            }
+            function maior(){
+                  alert(document.getElementById("maior1").value > document.getElementById("maior2").value);
+             }
+             function maiorigual(){
+                  alert(document.getElementById("maiorigual1").value >= document.getElementById("maiorigual2").value);
+              }
+             function menor(){
+                  alert(document.getElementById("menor1").value < document.getElementById("menor2").value);
+              }
+            function menorigual(){
+                    alert(document.getElementById("menorigual1").value <= document.getElementById("menorigual2").value);
+             }
+      </script>
     </body>
 </html>
