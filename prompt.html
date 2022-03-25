@@ -3,15 +3,35 @@
     <TItle>teste Prompt</TItle>
     <meta charset="utf-8">
     <meta name="PROMPT" content="TESTANDO">
+    <style>
+        .container {
+             margin: 0 auto;
+             width: 940px;
+        }
+        .inicio{
+          font-size: 30px;
+        }
+    </style>
    
     <head>
     </head>
     <body>
+        <div class="inicio container">
+            <form>
+                <H2>nome</H2>
+            <input id="text" type="text">
+                <h2>idade</h2>
+             <input id="idade2" type="number">
+                <button onclick="enviar()">Confirmar</button>
+            
          <script>
-        var nome = prompt("whats your name")
-        document.write("Welcome, ", nome)
-        var idade = prompt("Qual sua Idade?")
-        document.writeln("<br>O usuário possuí "+ idade + " anos")
-    </script>
+             function enviar(){
+                 var nome = document.getElementById("text").value;
+                 document.write("Welcome, ", nome);
+                 var idade = document.getElementById("idade2").value;
+                document.write("<br>O usuário possuí ", idade ," anos");
+             }
+         </script>
+        </div>
     </body>
 </html>
