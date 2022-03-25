@@ -23,13 +23,12 @@
                 <h2>idade</h2>
              <input id="idade2" type="number">
                 <button onclick="enviar()">Confirmar</button>
-            
+            </form>
          <script>
              function enviar(){
                  var nome = document.getElementById("text").value;
-                 document.write("Welcome, ", nome);
                  var idade = document.getElementById("idade2").value;
-                document.write("<br>O usuário possuí ", idade ," anos");
+                document.write("Welcome, ", nome, "<br>Idade: ", idade ," anos");
              }
          </script>
         </div>
