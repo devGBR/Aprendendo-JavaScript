@@ -5,22 +5,41 @@
         <title>IF e ELSE</title>
     <!-- <input id="idade" type="number">
     <button onclick="votar()">CONFIRMAR</button> -->
+        <input id="numero" type="number">
+        <button onclick="teste()">VER</button>
         <script>
+            function teste(){
+                var num = parseFloat(document.getElementById("numero").value);
+
+                if(num > 0){ alert(num + " é positivo.") }
+                else{
+                    if(num < 0){ alert(num + " é negativo")}else{
+                        alert("Esse numero não é positvo, nem negativo, nulo.")
+                    }
+                }
+            }
+
+
             // function votar(){
             //     var idade = parseInt(document.getElementById("idade").value);
                 
             //     if (idade < 16){
             //         alert("Você não tem idade para votar")
-            //     } else{
+            //     } 
+            //      else{
             //         if(idade < 18){ alert("seu voto e facultativo")
-            //         } else{ 
-            //             if(idade >= 65){ alert("seu voto e facultativo")
-            //                 } else{
-            //                      alert("Voto obrigatório")
-            //                  }
-            //              } 
+            //          }
+            
+            //       else{ 
+            //          if(idade >= 65){ alert("seu voto e facultativo")
+            //           } 
+            
+            //       else{
+            //            alert("Voto obrigatório")
+            //            }
+            //           }      
             //          } 
-            //      }
+            //         }
         </script>
     </head>
     <body>
