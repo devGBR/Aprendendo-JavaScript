@@ -9,7 +9,7 @@
              width: 940px;
         }
         .inicio{
-          font-size: 30px;
+          font-size: 15px;
         }
     </style>
    
@@ -18,18 +18,51 @@
     <body>
         <div class="inicio container">
             <form>
-                <H2>nome</H2>
-            <input id="text" type="text">
-                <h2>idade</h2>
-             <input id="idade2" type="number">
-                <button onclick="enviar()">Confirmar</button>
+                <!-- <H2>nome</H2>
+            <input id="text" type="text"> -->
+                Sua idade <br> 
+                <input id="usuario" type="number">
+                <button onclick="aposentar()">Confirmar</button>
+             <!-- <input id="idade" type="number">
+                <button onclick="enviar()">Confirmar</button> -->
+                <!-- <input id="name" type="text">
+                <br>
+                <input id="senha" type="password">
+                <br>
+                <button onclick="teste()">Entrar</button> -->
             </form>
          <script>
-             function enviar(){
-                 var nome = document.getElementById("text").value;
-                 var idade = document.getElementById("idade2").value;
-                document.write("Welcome, ", nome, "<br>Idade: ", idade ," anos");
-             }
+            //  function enviar(){
+            //      var nome = document.getElementById("text").value;
+            //      var idade = document.getElementById("idade2").value;
+            //     document.write("Welcome, ", nome, "<br>Idade: ", idade ," anos");
+            //  }
+        //         function enviar(){
+        //     var idade = parseInt(document.getElementById("idade").value);
+        //     if (idade>=21) {
+        //         document.write("Bem vindo, faça sua inscrição.");
+
+        //     } else{
+        //         document.write("Você tem " + idade + " anos, não tem idade para ser vigilante.")
+        //     }
+        // }
+        // function teste(){
+        //     var password =  document.querySelector("#senha").value;
+        //     var nome = document.querySelector("#name").value;
+        //     if (password == 2022){
+        //         document.write("Bem vindo, ", nome);
+        //     } else{ alert("Senha invalida, tente novamnete.");
+        // }
+        // }
+        function aposentar(){
+            var idade = parseInt(document.getElementById("usuario").value);
+
+            if (idade>=65){
+                document.write("Parabéns, o senhor(a) pode se aposentar.");
+            } else{
+                alert("O senhor(a) não possuí idade necessario para se aposentar. faltam " + (65-idade) + " anos, para se aponsentar.")
+            }
+        }
          </script>
         </div>
     </body>
