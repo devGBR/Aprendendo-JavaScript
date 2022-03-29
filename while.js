@@ -1,10 +1,13 @@
 function contar(){
-    var x = 5
-    var produto = 4
-    var divisao = 14
-
-    var conta = parseFloat(produto*=x++)
-    alert(conta)
+    for(var x=1; x<=6; x++){
+        document.write("<h"+x+">Oi, Sou o H"+x+"</h"+x+">")
+    }
+//   for(var a=2, b=10; a<=10 && b>=0; a+=2 , b--){
+//     document.writeln(a+"-"+b+"<br />");   
+//   }
+//   for(var conunt=10; count>=0; count--){
+//   document.writeln(count+"<br />");
+// } 
 //     var count = 0;
 
 // while(count<=100){
@@ -16,9 +19,9 @@ function contar(){
 }
 
 
-prompt.html
- function enviar(){
-     var nome = document.getElementById("text").value;
-     var idade = document.getElementById("idade").value;
-    document.write("Welcome, ", nome, "<br>Idade: ", idade ," anos");
- }
+// prompt.html
+//  function enviar(){
+//      var nome = document.getElementById("text").value;
+//      var idade = document.getElementById("idade").value;
+//     document.write("Welcome, ", nome, "<br>Idade: ", idade ," anos");
+//  }
