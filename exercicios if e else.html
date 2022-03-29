@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Exercicio 1</title>
+    </head>
+    <body>
+       Primeiro numero: <input id="numero" type="number"> <br>
+       Segundo numero:  <input id="numero1" type="number"><br>
+       Terceiro numero: <input id="numero2" type="number"><br>
+        <button onclick="teste()">Calcular</button>
+        <script>
+            // var num1 = parseFloat(prompt("Insira a nota do 1° semestre"));
+            // var num2 = parseFloat(prompt("Insira a nota do 2° semestre"));
+            // var total = num1+num2
+            //  alert("Sua media foi: "+ total)
+            // if (total<100){
+            //     document.write("Reprovado!<br> Nota: ", total, " min: 100")
+            // }else{
+            //     if (total<200){
+            //      document.write("Aprovado! <br> Nota:  ", total, " min: 100")
+            //  }else{
+            //      if(total>=200){
+            //         document.write("Aprovado com Distinção! <br> Nota: ", total, " min: 100")
+            //      }
+            //  }
+            // }
+            // var letra = prompt("Insira uma Letra do Alfabeto")
+            // letra.toLowerCase
+            //  if(letra=='a' || letra=='e' || letra=='i' || letra=='o' || letra=='u'){
+            //      alert("Vogal")
+            //  }else{
+            //      alert("Consoante")
+            //  }
+
+            function teste(){
+                var num1 = parseFloat(document.getElementById("numero").value);
+                var num2 = parseFloat(document.getElementById("numero1").value);
+                var num3 = parseFloat(document.getElementById("numero2").value);
+
+                var maior = num1
+                if(num2>maior)
+                maior = num2;
+                if(num3>maior)
+                maior = num3
+
+                alert("O maior numero é: "+ maior)
+            }
+             
+            
+        </script>
+    </body>
+</html>
