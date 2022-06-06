@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Calculadora</title>
-    </head>
-    <body>
-        <script>
+function calculadora(){
             var num1 = prompt("Digite o primeiro valor")
             num1 = parseFloat(num1)
                
@@ -20,6 +13,5 @@
                 document.write("<br>Resultado = ", sub)
                 document.write("<br>Resultado = ", mult)
                 document.write("<br>Resultado = ", div)
-        </script>
-    </body>
-</html>
+            }
+ 
